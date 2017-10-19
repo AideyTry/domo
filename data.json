@@ -1,0 +1,411 @@
+{
+    "userInfo": {
+        "admin": {
+            "userName": "admin",
+            "passWord": 111111,
+            "role": 1
+        },
+        "agency": {
+            "userName": "agency",
+            "passWord": 888888,
+            "role": 2
+        },
+        "staff": {
+            "userName": "staff",
+            "passWord": 666666,
+            "role": 4
+        }
+    },
+    "logout": {
+        "code": -2
+    },
+    "tableData": {
+        "pages1": {
+            "pageNum": 1,
+            "pageSize": 10,
+            "data": [
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 1,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                }
+            ]
+        },
+        "pages2": {
+            "pageNum": 2,
+            "pageSize": 10,
+            "data": [
+                {
+                    "name": "百希特润滑油2",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                },
+                {
+                    "name": "百希特润滑油2",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                },
+                {
+                    "name": "百希特润滑油2",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油2",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                },
+                {
+                    "name": "百希特润滑油2",
+                    "number": 2,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店2"
+                }
+            ]
+        },
+        "pages3": {
+            "pageNum": 3,
+            "pageSize": 10,
+            "data": [
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                },
+                {
+                    "name": "百希特润滑油3",
+                    "number": 3,
+                    "type": "TG",
+                    "brand": "DOW",
+                    "repertory": 1,
+                    "cost": 5,
+                    "suggesstedPrice": 10,
+                    "price": 8,
+                    "repair": "达欧形象店3"
+                }
+            ]
+        },
+        "totals": 30,
+        "columns": [
+            {
+                "title": "序号",
+                "key": "number"
+            },
+            {
+                "title": "配件名称",
+                "key": "name"
+            },
+            {
+                "title": "规格型号",
+                "key": "type"
+            },
+            {
+                "title": "品牌",
+                "key": "brand"
+            },
+            {
+                "title": "当前库存",
+                "key": "repertory"
+            },
+            {
+                "title": "库存单元成本（元",
+                "key": "cost"
+            },
+            {
+                "title": "建议价格（元）",
+                "key": "suggesstedPrice"
+            },
+            {
+                "title": "销售价格（元）",
+                "key": "price"
+            },
+            {
+                "title": "归属修理厂",
+                "key": "repair"
+            }
+        ]
+    }
+}
