@@ -42,7 +42,9 @@ export default {
         logout () {
             let params = {code: this.out}
             delToken(params).then((res) => {
-                 window.location.reload()
+                // this.$store.dispatch('fetchLoading', false)
+                console.log('this===', this.$store)
+                // window.location.reload()
                 // console.log('res=', res)
             })
             // console.log(1)

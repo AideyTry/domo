@@ -26,18 +26,26 @@
 			<Row type="flex" justify="center" align="middle" class="code-row-bg">
 				<Col span="8">
 					<FormItem>
-						<Button type="primary" @click="login('formInline', formInline)">登录</Button>
+						<!-- <Button type="primary" @click="login('formInline', formInline)">登录</Button> -->
+						<Button type="primary" @click="_login('formInline', formInline)">登录</Button>
+						<Button style="margin-left:43px" @click="changePassword">忘记密码</Button>
 					</FormItem>
 				</Col>
 			</Row>
 		</Form>
+		<!-- <loading></loading> -->
 	</div>
 </template>
 <script>
-	// import { getToken } from '../../mock/m_users'
-	import { getToken } from '../../api/users'
-    import md5 from 'js-md5'
+	import { getToken } from '../../mock/m_users'
+	// import Loading from '../../components/init/loading.vue'
+	// import { handleSpinCustom } from '../../common/js/loading'
+	// import { getToken } from '../../api/users'
+    // import md5 from 'js-md5'
 	export default {
+		// components: {
+		// 	Loading
+		// },
 		data () {
 			return {
                 username: '',
@@ -60,46 +68,61 @@
 			}
 		},
 		methods: {
-			login (name, userInfo) {
-				console.log('userInfo=', userInfo)
-				let params = { acc: userInfo.username, pwd: md5(userInfo.password) }
+			_login (name, formInline) {
+				let params = {
+					userName: formInline.username,
+					passWord: formInline.password
+					}
 				this.$refs[name].validate((valid) => {
-                    if (valid) {
-						// console.log('params=', params)
-						getToken(JSON.stringify(params)).then((res) => {
+					if (valid) {
+						// handleSpinCustom()
+						console.log(111)
+						getToken(params).then((res) => {
 							console.log('res=', res)
-							if (res.data.result === 0) {
-								let cook = res.data.data
-								this.$cookie.set('login', cook)
+							if (res.data.code !== -1) {
+								this.$Message.success('登录成功!')
+								let userInfo = res.data.userInfo
+								console.log('store=', this.$store)
+								this.$store.commit('initUserInfo', userInfo)
+								this.$cookie.set('login', userInfo)
 								this.$router.push({ path: '/purchase' })
+								let vm = this
+								setTimeout(function () {
+									console.log('userInfo==', vm.$store.getters)
+								}, 1000)
 							} else {
 								this.$Message.error('用户名或密码错误!')
 							}
-							// if (res.data.code !== -1) {
-							// 	this.$Message.success('登录成功!')
-							// 	let userInfo = res.data.userInfo
-							// 	console.log('store=', this.$store)
-							// 	this.$store.commit('initUserInfo', userInfo)
-							// 	this.$cookie.set('login', userInfo)
-							// 	this.$router.push({ path: '/purchase' })
-							// 	let vm = this
-							// 	setTimeout(function () {
-							// 		console.log('userInfo==', vm.$store.getters)
-							// 	}, 1000)
-							// } else {
-							// 	this.$Message.error('用户名或密码错误!')
-							// }
-						}, (error) => {
-							console.log(error)
-						}).catch((err) => {
-							console.log(err)
 						})
-                    }
-                })
+					}
+				})
+			},
+			// login (name, userInfo) {
+			// 	console.log('userInfo=', userInfo)
+			// 	let params = { acc: userInfo.username, pwd: md5(userInfo.password) }
+			// 	this.$refs[name].validate((valid) => {
+            //         if (valid) {
+			// 			// console.log('params=', params)
+			// 			getToken(JSON.stringify(params)).then((res) => {
+			// 				console.log('res=', res)
+			// 				if (res.data.result === 0) {
+			// 					let cook = res.data.data
+			// 					this.$cookie.set('login', cook)
+			// 					this.$router.push({ path: '/purchase' })
+			// 				} else {
+			// 					this.$Message.error('用户名或密码错误!')
+			// 				}
+			// 			}, (error) => {
+			// 				console.log(error)
+			// 			}).catch((err) => {
+			// 				console.log(err)
+			// 			})
+            //         }
+            //     })
+			// },
+			changePassword () {
+				this.$router.push({path: '/changePassword'})
 			}
-		},
-		munted () {
-			this.login()
 		}
 	}
 </script>

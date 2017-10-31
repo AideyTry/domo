@@ -1,16 +1,17 @@
 <style lang="less">
 .fittingWrap {
-    background-color: #fff;
-    .pagenation {
-        position: fixed;
-        bottom: 0;
-        right: 10%;
-    }
+  background-color: #fff;
+  .pagenation {
+    // position: fixed;
+
+    // bottom: 0;
+    // right: 10%;
+  }
 }
 .ivu-col-span-24 {
-    display: block;
-    width: 100%;
-    text-align: right;
+  display: block;
+  width: 100%;
+  text-align: right;
 }
 </style>
 <template>
@@ -18,18 +19,19 @@
         <Table :columns="columns" :data="tableData"></Table>
         <Row>
             <Col span="24">
-                <!-- <Button v-if="offlineRole.ADMIN" type="primary" shape="circle">保存修改</Button> -->
-                <Button type="primary" shape="circle">保存修改</Button>
+            <!-- <Button v-if="offlineRole.ADMIN" type="primary" shape="circle">保存修改</Button> -->
+            <Button type="primary" shape="circle">保存修改</Button>
             </Col>
         </Row>
         <input type="text" disabled="disabled">
         <div class="pagenation">
-            <Page :total="totals"   :page-size="pageSize" :current.sync="pageNum" size="small" :show-elevator="true"  :show-total="true" @on-change="changePage"></Page>
+            <Page :total="totals" :page-size="pageSize" :current.sync="pageNum" size="small" :show-elevator="true" :show-total="true" @on-change="changePage"></Page>
         </div>
     </div>
 </template>
 <script>
-import axios from 'axios'
+// import axios from 'axios'
+import ajax from '../../../../utils/fetch'
 export default {
     data () {
         return {
@@ -47,7 +49,7 @@ export default {
     },
     methods: {
         loadingPage (pageNum) {
-            axios.get('/mock/getPage', {
+            ajax.get('/mock/getPage', {
                 params: {
                     pageNum: pageNum || 1
                 }
